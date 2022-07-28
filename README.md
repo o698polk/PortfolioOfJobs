@@ -1,4 +1,3 @@
-<h1 Color="Black">Portafolio de Trabajos, Polk Vernaza </h1>
 
 
 
