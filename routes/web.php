@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ProjectController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,6 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/', function () {
-    return view('home.index');
-});
+Route::get('/', [ProjectController::class,'index']);
+Route::post('/store', [ProjectController::class,'store']);
+//Route::resource('project',ProjectController::class);
